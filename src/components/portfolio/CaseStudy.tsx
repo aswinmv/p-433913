@@ -1,0 +1,28 @@
+import React from "react";
+
+interface CaseStudyProps {
+  caseStudyImages: string[];
+}
+
+const CaseStudy: React.FC<CaseStudyProps> = ({ caseStudyImages }) => {
+  return (
+    <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px]">
+      <div className="flex items-center justify-center gap-5 mb-10">
+        <h2 className="text-[50px] font-bold">UI/UX Case Study</h2>
+        <span className="text-[50px] font-bold text-[#716C6C]">Works</span>
+      </div>
+      <div className="flex justify-center gap-6 max-md:flex-wrap">
+        {caseStudyImages.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Case Study ${index + 1}`}
+            className="w-[487px] h-[316px] object-cover"
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default CaseStudy;
