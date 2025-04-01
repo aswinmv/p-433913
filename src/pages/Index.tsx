@@ -1,9 +1,16 @@
+
 import React from "react";
 import Navbar from "@/components/portfolio/Navbar";
 import Hero from "@/components/portfolio/Hero";
 import AvailabilityBanner from "@/components/portfolio/AvailabilityBanner";
 import Process from "@/components/portfolio/Process";
 import CaseStudy from "@/components/portfolio/CaseStudy";
+import Services from "@/components/portfolio/Services";
+import TechStack from "@/components/portfolio/TechStack";
+import ContactForm from "@/components/portfolio/ContactForm";
+import FAQ from "@/components/portfolio/FAQ";
+import About from "@/components/portfolio/About";
+import Footer from "@/components/portfolio/Footer";
 
 // Placeholder images - in a real app, these would be imported or loaded from a CDN
 const PROFILE_IMAGE =
@@ -27,8 +34,14 @@ const Index: React.FC = () => {
             <AvailabilityBanner />
             <Process />
             <CaseStudy caseStudyImages={CASE_STUDY_IMAGES} />
+            <Services />
+            <TechStack />
+            <ContactForm />
+            <FAQ />
+            <About />
           </main>
         </div>
+        <Footer />
       </div>
     </div>
   );
