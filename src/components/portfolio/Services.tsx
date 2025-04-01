@@ -10,10 +10,10 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, bgColor }) => {
   return (
-    <Card className={`${bgColor} border-none rounded-lg`}>
+    <Card className={`${bgColor} border-none rounded-lg h-full`}>
       <CardContent className="p-6">
         <h3 className="text-xl font-semibold mb-3">{title}</h3>
-        <p className="text-sm">{description}</p>
+        <p className="text-sm leading-relaxed">{description}</p>
       </CardContent>
     </Card>
   );
@@ -23,43 +23,73 @@ const Services: React.FC = () => {
   const services = [
     {
       title: "UI/ UX & Product Design",
-      description: "Creating intuitive and visually appealing digital interfaces that enhance user experience and drive engagement. From mobile apps to websites, I help make your vision reality.",
-      bgColor: "bg-[#CCF4E3]"
+      description: "I turn complex problems into intuitive, human-friendly designs, balancing clarity, aesthetics, and real-world usability. From scribbles to pixel-perfect screens, I craft experiences that people enjoy using.",
+      bgColor: "bg-[#EDF8FB]"
     },
     {
       title: "Web Development",
-      description: "Building responsive, fast-loading websites with clean code and modern technologies. Whether you need a simple landing page or a complex web application, I've got you covered.",
-      bgColor: "bg-[#E5DEF4]"
+      description: "I build fast, responsive, and accessible websites using modern technologies. Every pixel is crafted to deliver smooth performance across all devices.",
+      bgColor: "bg-[#F1E6FF]"
     },
     {
       title: "Branding & Visual Identity",
-      description: "Crafting memorable brand identities that resonate with your audience. From logos and color palettes to typography and design systems, I help establish a cohesive visual language.",
-      bgColor: "bg-[#C3F0D0]"
+      description: "I design logos that pop, style guides that keep brands consistent, and visuals that tell stories people remember.",
+      bgColor: "bg-[#EAF8EE]"
     },
     {
-      title: "AI Driven Creative Solutions",
-      description: "Leveraging artificial intelligence to create innovative design solutions that are data-driven and future-proof. I combine human creativity with AI capabilities for optimal results.",
-      bgColor: "bg-[#F8C7D5]"
+      title: "AI-Driven Creative Solutions",
+      description: "I leverage AI to streamline design workflows, automate content creation, and enhance user engagement with smart solutions.",
+      bgColor: "bg-[#FFF0F0]"
     },
     {
       title: "MVP Development",
-      description: "Transforming your startup idea into a viable product quickly and efficiently. I focus on essential features that demonstrate your concept and attract early users or investors.",
-      bgColor: "bg-[#E1F0CD]"
+      description: "I leverage AI to rapidly create high-fidelity prototypes and MVPs, enabling startups to validate ideas, pitch investors, and test concepts within days.",
+      bgColor: "bg-[#F1E6FF]"
     }
   ];
 
   return (
     <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px]">
       <h2 className="text-[50px] font-bold text-center mb-10">Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {services.map((service, index) => (
+      <div className="grid grid-cols-12 gap-6">
+        {/* First row - 2 cards with adjusted column spans */}
+        <div className="col-span-12 md:col-span-7">
           <ServiceCard
-            key={index}
-            title={service.title}
-            description={service.description}
-            bgColor={service.bgColor}
+            title={services[0].title}
+            description={services[0].description}
+            bgColor={services[0].bgColor}
           />
-        ))}
+        </div>
+        <div className="col-span-12 md:col-span-5">
+          <ServiceCard
+            title={services[1].title}
+            description={services[1].description}
+            bgColor={services[1].bgColor}
+          />
+        </div>
+
+        {/* Second row - 3 cards */}
+        <div className="col-span-12 md:col-span-5">
+          <ServiceCard
+            title={services[2].title}
+            description={services[2].description}
+            bgColor={services[2].bgColor}
+          />
+        </div>
+        <div className="col-span-12 md:col-span-7">
+          <ServiceCard
+            title={services[3].title}
+            description={services[3].description}
+            bgColor={services[3].bgColor}
+          />
+        </div>
+        <div className="col-span-12 md:col-span-12">
+          <ServiceCard
+            title={services[4].title}
+            description={services[4].description}
+            bgColor={services[4].bgColor}
+          />
+        </div>
       </div>
     </section>
   );
