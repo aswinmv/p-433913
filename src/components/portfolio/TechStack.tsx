@@ -1,44 +1,41 @@
 
 import React from "react";
+import { Figma, Framer, Zap, Heart, Moon, Bolt } from "lucide-react";
 
 // Tech stack data with proper icons and colors
 const TechStack: React.FC = () => {
   // Top row tech icons (scrolling right)
   const topRowTechIcons = [
     {
-      name: "Adobe Illustrator",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
-      bgColor: "bg-[#F2E7FE]", // Light purple background
-    },
-    {
-      name: "Photoshop",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
-      bgColor: "bg-[#F2E7FE]", // Light purple background
-    },
-    {
       name: "Figma",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      icon: <Figma className="w-10 h-10" />,
       bgColor: "bg-[#F2E7FE]", // Light purple background
     },
     {
       name: "Framer",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      icon: <Framer className="w-10 h-10" />,
       bgColor: "bg-[#F2E7FE]", // Light purple background
     },
     {
-      name: "HTML",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "Photoshop",
+      // Using a styled div since there's no direct Photoshop icon
+      icon: <div className="w-10 h-10 flex items-center justify-center font-bold text-blue-600">Ps</div>,
       bgColor: "bg-[#F2E7FE]", // Light purple background
     },
     {
-      name: "CSS",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "Illustrator",
+      // Using a styled div since there's no direct Illustrator icon
+      icon: <div className="w-10 h-10 flex items-center justify-center font-bold text-orange-600">Ai</div>,
+      bgColor: "bg-[#F2E7FE]", // Light purple background
+    },
+    {
+      name: "Figma",
+      icon: <Figma className="w-10 h-10" />,
+      bgColor: "bg-[#F2E7FE]", // Light purple background
+    },
+    {
+      name: "Framer",
+      icon: <Framer className="w-10 h-10" />,
       bgColor: "bg-[#F2E7FE]", // Light purple background
     },
   ];
@@ -46,39 +43,33 @@ const TechStack: React.FC = () => {
   // Bottom row tech icons (scrolling left)
   const bottomRowTechIcons = [
     {
-      name: "Swift",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "OpenAI",
+      icon: <Zap className="w-10 h-10" />,
       bgColor: "bg-[#FFE9E9]", // Light pink background
     },
     {
-      name: "Tailwind",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "Midjourney",
+      icon: <Moon className="w-10 h-10" />,
       bgColor: "bg-[#FFE9E9]", // Light pink background
     },
     {
-      name: "React",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "Lovable",
+      icon: <Heart className="w-10 h-10" />,
       bgColor: "bg-[#FFE9E9]", // Light pink background
     },
     {
-      name: "Next.js",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "Bolt.new",
+      icon: <Bolt className="w-10 h-10" />,
       bgColor: "bg-[#FFE9E9]", // Light pink background
     },
     {
-      name: "VS Code",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "OpenAI",
+      icon: <Zap className="w-10 h-10" />,
       bgColor: "bg-[#FFE9E9]", // Light pink background
     },
     {
-      name: "TypeScript",
-      icon: "/lovable-uploads/91ceb6e9-6ae8-4bff-ab7a-87670629f310.png",
-      iconClass: "w-10 h-10 object-contain",
+      name: "Midjourney",
+      icon: <Moon className="w-10 h-10" />,
       bgColor: "bg-[#FFE9E9]", // Light pink background
     },
   ];
@@ -97,7 +88,7 @@ const TechStack: React.FC = () => {
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
-              <img src={tech.icon} alt={tech.name} className={tech.iconClass} />
+              {tech.icon}
             </div>
           ))}
           
@@ -108,7 +99,7 @@ const TechStack: React.FC = () => {
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
-              <img src={tech.icon} alt={tech.name} className={tech.iconClass} />
+              {tech.icon}
             </div>
           ))}
         </div>
@@ -124,7 +115,7 @@ const TechStack: React.FC = () => {
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
-              <img src={tech.icon} alt={tech.name} className={tech.iconClass} />
+              {tech.icon}
             </div>
           ))}
           
@@ -135,7 +126,7 @@ const TechStack: React.FC = () => {
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
-              <img src={tech.icon} alt={tech.name} className={tech.iconClass} />
+              {tech.icon}
             </div>
           ))}
         </div>
