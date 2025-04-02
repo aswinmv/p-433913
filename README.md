@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# Welcome my portfolio website
 
 ## Project info
 
@@ -8,9 +8,9 @@
 
 There are several ways of editing your application.
 
-**Use Lovable**
+**Use Lovable or vscode**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/68fc920f-8ee5-4424-9632-3ec23c4ebd3b) and start prompting.
+Simply visit the [Lovable Project](https://lovable.dev/projects/68fc920f-8ee5-4424-9632-3ec23c4ebd3b) and start prompting.or use your coding skills
 
 Changes made via Lovable will be committed automatically to this repo.
 
