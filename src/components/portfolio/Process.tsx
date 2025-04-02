@@ -1,3 +1,4 @@
+
 import React from "react";
 
 interface ProcessStepProps {
@@ -38,7 +39,7 @@ const Process: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px]">
+    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
       <div className="text-center">
         <h2 className="text-[50px] font-bold mb-5">The Process</h2>
         <p className="text-[40px] font-normal mb-10">

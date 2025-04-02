@@ -49,7 +49,7 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px]">
+    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
       <h2 className="text-[50px] font-bold text-center mb-10">Services</h2>
       <div className="grid grid-cols-12 gap-6">
         {/* First row - 2 cards with adjusted column spans */}

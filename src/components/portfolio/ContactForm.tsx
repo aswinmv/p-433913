@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const ContactForm: React.FC = () => {
   return (
-    <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px] flex flex-col md:flex-row gap-10">
+    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px] flex flex-col md:flex-row gap-10">
       <div className="w-full md:w-1/2">
         <h2 className="text-[40px] font-bold mb-6">Send a Message</h2>
         <p className="text-lg mb-8">

@@ -32,7 +32,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[150px] max-md:mt-20 max-sm:mt-[60px]">
+    <section className="mt-[80px] max-md:mt-14 max-sm:mt-[40px]">
       <h2 className="text-[60px] font-bold text-center text-gray-500 mb-5">More About me?</h2>
       <p className="text-center mb-8 max-w-4xl mx-auto text-gray-600">
         This page has everything you need to know, packed with details! Take your time exploring, and feel free to reach out if you have any questions.

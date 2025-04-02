@@ -1,8 +1,6 @@
-
 import React from "react";
 import { Figma, Framer, Zap, Heart, Moon, Bolt } from "lucide-react";
 
-// Tech stack data with proper icons and colors
 const TechStack: React.FC = () => {
   // Top row tech icons (scrolling right)
   const topRowTechIcons = [
@@ -75,7 +73,7 @@ const TechStack: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px]">
+    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
       <h2 className="text-[40px] font-bold text-center mb-10">My Tech stack</h2>
       
       {/* Top row - scrolling right */}

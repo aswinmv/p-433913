@@ -1,3 +1,4 @@
+
 import React from "react";
 
 interface CaseStudyProps {
@@ -6,7 +7,7 @@ interface CaseStudyProps {
 
 const CaseStudy: React.FC<CaseStudyProps> = ({ caseStudyImages }) => {
   return (
-    <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px]">
+    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
       <div className="flex items-center justify-center gap-5 mb-10">
         <h2 className="text-[50px] font-bold">UI/UX Case Study</h2>
         <span className="text-[50px] font-bold text-[#716C6C]">Works</span>
