@@ -75,25 +75,25 @@ const TechStack: React.FC = () => {
   return (
     <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
       <h2 className="text-[40px] font-bold text-center mb-10">My Tech stack</h2>
-      
+
       {/* Top row - scrolling right */}
       <div className="overflow-hidden mb-4">
         <div className="flex animate-marquee whitespace-nowrap">
           {/* First set of icons */}
           {topRowTechIcons.map((tech, index) => (
-            <div 
-              key={`top-1-${index}`} 
+            <div
+              key={`top-1-${index}`}
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
               {tech.icon}
             </div>
           ))}
-          
+
           {/* Duplicate set for seamless looping */}
           {topRowTechIcons.map((tech, index) => (
-            <div 
-              key={`top-2-${index}`} 
+            <div
+              key={`top-2-${index}`}
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
@@ -102,25 +102,25 @@ const TechStack: React.FC = () => {
           ))}
         </div>
       </div>
-      
+
       {/* Bottom row - scrolling left */}
       <div className="overflow-hidden">
         <div className="flex animate-marquee-reverse whitespace-nowrap">
           {/* First set of icons */}
           {bottomRowTechIcons.map((tech, index) => (
-            <div 
-              key={`bottom-1-${index}`} 
+            <div
+              key={`bottom-1-${index}`}
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
               {tech.icon}
             </div>
           ))}
-          
+
           {/* Duplicate set for seamless looping */}
           {bottomRowTechIcons.map((tech, index) => (
-            <div 
-              key={`bottom-2-${index}`} 
+            <div
+              key={`bottom-2-${index}`}
               className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
               aria-label={tech.name}
             >
