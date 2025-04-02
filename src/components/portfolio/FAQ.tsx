@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { MessageSquare, HelpCircle } from "lucide-react";
 
 const FAQ: React.FC = () => {
   const faqs = [
@@ -34,23 +35,34 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="mt-[100px] max-md:mt-20 max-sm:mt-[60px]">
-      <div className="text-center mb-10">
-        <h2 className="text-[40px] font-bold">Got Question?</h2>
-        <p className="text-xl">I have answers</p>
-      </div>
-      <div className="bg-[#F8F8FC] rounded-lg p-6">
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200 py-2">
-              <AccordionTrigger className="text-lg font-medium">{faq.question}</AccordionTrigger>
-              <AccordionContent className="text-gray-700">{faq.answer}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-        <div className="flex justify-center mt-6">
-          <Button variant="outline" className="border border-black rounded-md px-8">
-            Have a Call
+      <div className="flex flex-col md:flex-row gap-8 items-start">
+        {/* Left side - FAQ header and contact button */}
+        <div className="w-full md:w-1/3 bg-[#f0f0f0] rounded-2xl p-8 flex flex-col items-center text-center">
+          <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-md">
+            <HelpCircle className="w-8 h-8 text-black" />
+          </div>
+          <h2 className="text-3xl font-bold mb-4">Got Questions?</h2>
+          <p className="text-gray-600 mb-6">Feel free to reach out if you have any questions about my services or how we can work together.</p>
+          <Button className="bg-black text-white rounded-full px-8 py-6 h-auto flex items-center gap-2 hover:bg-gray-800">
+            <MessageSquare className="w-5 h-5" />
+            <span>Contact Me</span>
           </Button>
+        </div>
+
+        {/* Right side - FAQ accordion */}
+        <div className="w-full md:w-2/3 bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
+          <Accordion type="single" collapsible className="w-full">
+            {faqs.map((faq, index) => (
+              <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200 py-2">
+                <AccordionTrigger className="text-lg font-medium hover:no-underline">
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-gray-700">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
