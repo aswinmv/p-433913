@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#222222] text-white py-10 mt-20">
-      <div className="container mx-auto px-6">
+    <footer className="bg-[#222222] text-white py-10 mt-20 w-full">
+      <div className="max-w-[1440px] mx-auto px-6">
         <div className="text-center mb-6">
           <p>Interested in working with me? Send me a message at <a href="mailto:aswinmv.ux@gmail.com" className="text-white hover:underline">aswinmv.ux@gmail.com</a></p>
         </div>
