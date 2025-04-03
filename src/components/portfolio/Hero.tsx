@@ -8,7 +8,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ profileImage }) => {
   return (
-    <section className="flex flex-col items-center text-center mt-12 max-md:mt-8 max-sm:mt-6">
+    <section className="flex flex-col items-center text-center mt-6 max-md:mt-4 max-sm:mt-3">
       <h1 className="text-[50px] font-bold mb-5">Hi, I'm Aswin</h1>
       <p className="text-xl font-semibold mb-10">
         Product Designer transforming ideas into reality
