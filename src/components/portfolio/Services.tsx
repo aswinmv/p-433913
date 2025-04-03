@@ -49,8 +49,8 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
-      <h2 className="text-[50px] font-bold text-center mb-10">Services</h2>
+    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
+      <h2 className="text-[50px] font-bold text-center mb-6">Services</h2>
       <div className="grid grid-cols-12 gap-6">
         {/* First row - 2 cards with adjusted column spans */}
         <div className="col-span-12 md:col-span-7">

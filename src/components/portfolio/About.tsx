@@ -32,12 +32,12 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[80px] max-md:mt-14 max-sm:mt-[40px]">
-      <h2 className="text-[60px] font-bold text-center text-gray-500 mb-5">More About me?</h2>
-      <p className="text-center mb-8 max-w-4xl mx-auto text-gray-600">
+    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
+      <h2 className="text-[60px] font-bold text-center text-gray-500 mb-4">More About me?</h2>
+      <p className="text-center mb-6 max-w-4xl mx-auto text-gray-600">
         This page has everything you need to know, packed with details! Take your time exploring, and feel free to reach out if you have any questions.
       </p>
-      <div className="flex justify-center gap-6 mb-12">
+      <div className="flex justify-center gap-6 mb-8">
         {socialIcons.map((social, index) => (
           <a 
             key={index} 
@@ -48,9 +48,9 @@ const About: React.FC = () => {
           </a>
         ))}
       </div>
-      <div className="text-center mb-10">
-        <h3 className="text-3xl font-bold mb-5">Beyond Design</h3>
-        <p className="max-w-3xl mx-auto text-gray-600 mb-10">
+      <div className="text-center mb-6">
+        <h3 className="text-3xl font-bold mb-4">Beyond Design</h3>
+        <p className="max-w-3xl mx-auto text-gray-600 mb-6">
           I'm not just a designer, I'm a traveler and adventure seeker who finds inspiration in exploring new places. Whether it's trekking through mountains or discovering hidden trails, I thrive on the thrill of the unknown.
         </p>
       </div>

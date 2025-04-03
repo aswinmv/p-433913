@@ -39,10 +39,10 @@ const Process: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
+    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
       <div className="text-center">
-        <h2 className="text-[50px] font-bold mb-5">The Process</h2>
-        <p className="text-[40px] font-normal mb-10">
+        <h2 className="text-[50px] font-bold mb-3">The Process</h2>
+        <p className="text-[40px] font-normal mb-6">
           This Is How the Magic Happens.
         </p>
       </div>

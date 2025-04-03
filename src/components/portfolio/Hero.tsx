@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 
@@ -7,7 +8,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ profileImage }) => {
   return (
-    <section className="flex flex-col items-center text-center mt-20 max-md:mt-[60px] max-sm:mt-10">
+    <section className="flex flex-col items-center text-center mt-12 max-md:mt-8 max-sm:mt-6">
       <h1 className="text-[50px] font-bold mb-5">Hi, I'm Aswin</h1>
       <p className="text-xl font-semibold mb-10">
         Product Designer transforming ideas into reality
@@ -15,9 +16,9 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
       <img
         src={profileImage}
         alt="Profile"
-        className="w-[258px] h-[295px] rounded-[10px] mb-[40px] object-cover"
+        className="w-[258px] h-[295px] rounded-[10px] mb-[30px] object-cover"
       />
-      <p className="text-xl font-semibold max-w-screen-md mb-[30px]">
+      <p className="text-xl font-semibold max-w-screen-md mb-[20px]">
         If you are searching for a Designer to transform your ideas into
         reality, lets connect.
       </p>

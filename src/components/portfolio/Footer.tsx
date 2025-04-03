@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-[#222222] text-white py-10 mt-12 w-full">
+    <footer className="bg-[#222222] text-white py-8 mt-8 w-full">
       <div className="max-w-[1440px] mx-auto px-6">
-        <div className="text-center mb-6">
+        <div className="text-center mb-4">
           <p>Interested in working with me? Send me a message at <a href="mailto:aswinmv.ux@gmail.com" className="text-white hover:underline">aswinmv.ux@gmail.com</a></p>
         </div>
-        <div className="flex justify-center gap-5 mb-6">
+        <div className="flex justify-center gap-5 mb-4">
           {socialIcons.map((social, index) => (
             <a 
               key={index} 

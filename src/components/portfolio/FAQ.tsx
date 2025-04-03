@@ -34,8 +34,8 @@ const FAQ: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
-      <div className="flex flex-col md:flex-row gap-8 items-start">
+    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
+      <div className="flex flex-col md:flex-row gap-6 items-start">
         {/* Left side - FAQ header and contact button */}
         <div className="w-full md:w-1/3 bg-[#f0f0f0] rounded-2xl p-8 flex flex-col items-center text-center">
           <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-md">

@@ -7,8 +7,8 @@ interface CaseStudyProps {
 
 const CaseStudy: React.FC<CaseStudyProps> = ({ caseStudyImages }) => {
   return (
-    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
-      <div className="flex items-center justify-center gap-5 mb-10">
+    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
+      <div className="flex items-center justify-center gap-5 mb-6">
         <h2 className="text-[50px] font-bold">UI/UX Case Study</h2>
         <span className="text-[50px] font-bold text-[#716C6C]">Works</span>
       </div>

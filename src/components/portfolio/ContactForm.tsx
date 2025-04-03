@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 
 const ContactForm: React.FC = () => {
   return (
-    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px] flex flex-col md:flex-row gap-10">
+    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6 flex flex-col md:flex-row gap-8">
       <div className="w-full md:w-1/2">
-        <h2 className="text-[40px] font-bold mb-6">Send a Message</h2>
-        <p className="text-lg mb-8">
+        <h2 className="text-[40px] font-bold mb-4">Send a Message</h2>
+        <p className="text-lg mb-6">
           Let's discuss your next project! Have a design or development need?
           Just send me a message and I'll get back to you as soon as possible.
         </p>
@@ -29,7 +29,7 @@ const ContactForm: React.FC = () => {
         </div>
       </div>
       <div className="w-full md:w-1/2 bg-white p-8 rounded-lg shadow-sm">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-5">
           <div>
             <label htmlFor="name" className="block text-sm font-medium mb-2">Your Name</label>
             <Input id="name" placeholder="Name" className="bg-[#F8F8FC]" />

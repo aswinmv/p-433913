@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Figma, Framer, Zap, Heart, Moon, Bolt } from "lucide-react";
 
@@ -73,8 +74,8 @@ const TechStack: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[60px] max-md:mt-14 max-sm:mt-[40px]">
-      <h2 className="text-[40px] font-bold text-center mb-10">My Tech stack</h2>
+    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
+      <h2 className="text-[40px] font-bold text-center mb-6">My Tech stack</h2>
 
       {/* Top row - scrolling right */}
       <div className="overflow-hidden mb-4">
