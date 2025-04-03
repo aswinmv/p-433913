@@ -16,16 +16,16 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
       
       {/* Marquee animation for background text */}
       <div className="relative">
-        <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap overflow-hidden w-[500px]">
+        <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap overflow-hidden w-[800px]">
           <div className="inline-block animate-marquee">
-            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
-            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
-            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+            <span className="text-8xl font-bold text-[#8B5CF6]/30 mr-8">PRODUCT DESIGNER</span>
+            <span className="text-8xl font-bold text-[#8B5CF6]/30 mr-8">PRODUCT DESIGNER</span>
+            <span className="text-8xl font-bold text-[#8B5CF6]/30 mr-8">PRODUCT DESIGNER</span>
           </div>
           <div className="inline-block animate-marquee-reverse">
-            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
-            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
-            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+            <span className="text-8xl font-bold text-[#8B5CF6]/30 mr-8">PRODUCT DESIGNER</span>
+            <span className="text-8xl font-bold text-[#8B5CF6]/30 mr-8">PRODUCT DESIGNER</span>
+            <span className="text-8xl font-bold text-[#8B5CF6]/30 mr-8">PRODUCT DESIGNER</span>
           </div>
         </div>
         
