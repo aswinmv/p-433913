@@ -1,8 +1,9 @@
+
 import React from "react";
 const Navbar: React.FC = () => {
-  return <div className="flex justify-center py-[14px]">
-      <div className="flex w-[654px] h-[72px] items-center justify-between bg-[rgba(32,31,31,0.75)] px-4 py-5 rounded-[10px] max-md:w-full max-sm:h-auto">
-        <div className="flex items-center gap-[71px] max-md:gap-10 max-sm:gap-5 overflow-x-auto">
+  return <div className="flex justify-center py-[10px]">
+      <div className="flex w-[654px] h-[62px] items-center justify-between bg-[rgba(32,31,31,0.75)] px-4 py-4 rounded-[10px] max-md:w-full max-sm:h-auto">
+        <div className="flex items-center gap-[60px] max-md:gap-8 max-sm:gap-4 overflow-x-auto">
           <div className="text-white font-semibold text-xl whitespace-nowrap">
             Asween
           </div>
