@@ -13,11 +13,29 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
       <p className="text-xl font-semibold mb-4">
         Product Designer transforming ideas into reality
       </p>
-      <img
-        src={profileImage}
-        alt="Profile"
-        className="w-[258px] h-[295px] rounded-[10px] mb-[15px] object-cover"
-      />
+      
+      {/* Marquee animation for background text */}
+      <div className="relative">
+        <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap overflow-hidden w-[500px]">
+          <div className="inline-block animate-marquee">
+            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+          </div>
+          <div className="inline-block animate-marquee-reverse">
+            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+            <span className="text-7xl font-bold text-[#8B5CF6]/10 mr-4">PRODUCT DESIGNER</span>
+          </div>
+        </div>
+        
+        <img
+          src={profileImage}
+          alt="Profile"
+          className="w-[258px] h-[295px] rounded-[10px] mb-[15px] object-cover relative z-10"
+        />
+      </div>
+      
       <p className="text-xl font-semibold max-w-screen-md mb-[15px]">
         If you are searching for a Designer to transform your ideas into
         reality, lets connect.
