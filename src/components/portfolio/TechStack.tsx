@@ -75,7 +75,7 @@ const TechStack: React.FC = () => {
 
   return (
     <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
-      <h2 className="text-[40px] font-bold text-center mb-6">My Tech stack</h2>
+      <h2 className="text-[40px] font-bold text-center mb-6 max-sm:text-[28px]">My Tech stack</h2>
 
       {/* Top row - scrolling right */}
       <div className="overflow-hidden mb-4">
@@ -84,7 +84,7 @@ const TechStack: React.FC = () => {
           {topRowTechIcons.map((tech, index) => (
             <div
               key={`top-1-${index}`}
-              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
+              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2 max-sm:min-w-[100px] max-sm:h-[50px]`}
               aria-label={tech.name}
             >
               {tech.icon}
@@ -95,7 +95,7 @@ const TechStack: React.FC = () => {
           {topRowTechIcons.map((tech, index) => (
             <div
               key={`top-2-${index}`}
-              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
+              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2 max-sm:min-w-[100px] max-sm:h-[50px]`}
               aria-label={tech.name}
             >
               {tech.icon}
@@ -111,7 +111,7 @@ const TechStack: React.FC = () => {
           {bottomRowTechIcons.map((tech, index) => (
             <div
               key={`bottom-1-${index}`}
-              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
+              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2 max-sm:min-w-[100px] max-sm:h-[50px]`}
               aria-label={tech.name}
             >
               {tech.icon}
@@ -122,7 +122,7 @@ const TechStack: React.FC = () => {
           {bottomRowTechIcons.map((tech, index) => (
             <div
               key={`bottom-2-${index}`}
-              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2`}
+              className={`inline-flex min-w-[120px] h-[60px] ${tech.bgColor} rounded-lg items-center justify-center mx-2 max-sm:min-w-[100px] max-sm:h-[50px]`}
               aria-label={tech.name}
             >
               {tech.icon}

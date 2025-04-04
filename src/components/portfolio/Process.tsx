@@ -41,8 +41,8 @@ const Process: React.FC = () => {
   return (
     <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
       <div className="text-center">
-        <h2 className="text-[50px] font-bold mb-3">The Process</h2>
-        <p className="text-[40px] font-normal mb-6">
+        <h2 className="text-[50px] font-bold mb-3 max-sm:text-[30px]">The Process</h2>
+        <p className="text-[40px] font-normal mb-6 max-sm:text-[24px]">
           This Is How the Magic Happens.
         </p>
       </div>

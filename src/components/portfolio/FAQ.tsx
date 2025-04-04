@@ -41,9 +41,9 @@ const FAQ: React.FC = () => {
           <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mb-6 shadow-md">
             <HelpCircle className="w-8 h-8 text-black" />
           </div>
-          <h2 className="text-3xl font-bold mb-4">Got Questions?</h2>
-          <p className="text-gray-600 mb-6">Feel free to reach out if you have any questions about my services or how we can work together.</p>
-          <Button className="bg-black text-white rounded-full px-8 py-6 h-auto flex items-center gap-2 hover:bg-gray-800">
+          <h2 className="text-3xl font-bold mb-4 max-sm:text-2xl">Got Questions?</h2>
+          <p className="text-gray-600 mb-6 max-sm:text-sm">Feel free to reach out if you have any questions about my services or how we can work together.</p>
+          <Button className="bg-black text-white rounded-full px-8 py-6 h-auto flex items-center gap-2 hover:bg-gray-800 max-sm:px-6 max-sm:py-4">
             <MessageSquare className="w-5 h-5" />
             <span>Contact Me</span>
           </Button>
@@ -54,10 +54,10 @@ const FAQ: React.FC = () => {
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-200 py-2">
-                <AccordionTrigger className="text-lg font-medium hover:no-underline">
+                <AccordionTrigger className="text-lg font-medium hover:no-underline max-sm:text-base">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-700">
+                <AccordionContent className="text-gray-700 max-sm:text-sm">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
