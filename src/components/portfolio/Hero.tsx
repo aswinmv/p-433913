@@ -40,13 +40,13 @@ const Hero: React.FC<HeroProps> = ({ profileImage }) => {
         If you are searching for a Designer to transform your ideas into
         reality, lets connect.
       </p>
-      <div className="absolute bottom-4 flex gap-6 max-sm:flex-col max-sm:w-full max-sm:px-4">
-        <Button className="w-40 h-[42px] bg-[#201F1F] text-white text-xl font-semibold rounded-[5px] max-sm:w-full">
+      <div className="absolute bottom-4 flex gap-6 max-sm:static max-sm:flex-col max-sm:w-full max-sm:px-4 max-sm:mt-6">
+        <Button className="w-40 h-[42px] bg-[#201F1F] text-white text-xl font-semibold rounded-[5px] max-sm:w-full max-sm:text-base">
           Hire me
         </Button>
         <Button
           variant="outline"
-          className="w-40 h-[42px] border text-xl font-semibold rounded-[5px] border-black max-sm:w-full"
+          className="w-40 h-[42px] border text-xl font-semibold rounded-[5px] border-black max-sm:w-full max-sm:text-base"
         >
           Book a Call
         </Button>
