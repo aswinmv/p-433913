@@ -39,15 +39,15 @@ const Process: React.FC = () => {
   ];
 
   return (
-    <section className="mt-[30px] max-md:mt-8 max-sm:mt-6">
+    <section className="mt-[20px] max-md:mt-6 max-sm:mt-4">
       <div className="text-center">
         <h2 className="text-[50px] font-bold mb-3 max-sm:text-[30px]">The Process</h2>
-        <p className="text-[40px] font-normal mb-6 max-sm:text-[24px]">
+        <p className="text-[40px] font-normal mb-4 max-sm:text-[24px]">
           This Is How the Magic Happens.
         </p>
       </div>
       <div className="flex justify-center">
-        <div className="flex w-full max-w-[1244px] gap-[130px] bg-[#CCE4FF] p-5 rounded-[10px] max-md:flex-wrap max-md:gap-[60px] max-sm:gap-10">
+        <div className="flex w-full max-w-[1244px] gap-[130px] bg-[#CCE4FF] p-5 rounded-[10px] max-md:flex-wrap max-md:gap-[60px] max-sm:gap-8">
           {steps.map((step, index) => (
             <ProcessStep
               key={index}

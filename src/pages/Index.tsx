@@ -29,7 +29,7 @@ const Index: React.FC = () => {
             <Navbar />
           </header>
 
-          <main>
+          <main className="space-y-4 max-sm:space-y-2 pt-20">
             <Hero profileImage={PROFILE_IMAGE} />
             <AvailabilityBanner />
             <Process />
